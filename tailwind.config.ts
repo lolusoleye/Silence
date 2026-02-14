@@ -12,6 +12,23 @@ export default {
         "2xl": "1400px",
       },
     },
+    spacing: {
+      '0': '0px',
+      '1': '8px',
+      '2': '16px',
+      '3': '24px',
+      '4': '32px',
+      '5': '40px',
+      '6': '48px',
+      '7': '56px',
+      '8': '64px',
+      '9': '72px',
+      '10': '80px',
+      '12': '96px',
+      '16': '128px',
+      'px': '1px',
+      '0.5': '4px',
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -47,6 +64,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        game: {
+          card: "hsl(var(--game-card-bg))",
+          "card-border": "hsl(var(--game-card-border))",
+          "card-number": "hsl(var(--game-card-number))",
+          pulse: "hsl(var(--game-pulse))",
+          silence: "hsl(var(--game-silence-overlay))",
+          error: "hsl(var(--game-error-flash))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +90,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
